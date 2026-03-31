@@ -89,3 +89,26 @@ Additional public-governance documents:
 - `SECURITY.md`
 - `CONTRIBUTING.md`
 - `docs/public_release_boundary.md`
+
+
+
+
+## Architecture and Readiness
+
+- `docs/architecture_diagram.md`
+- `docs/deployment_readiness.md`
+- `docs/repository_map.md`
+
+## Additional Reading
+
+- `docs/executive_overview.md`
+- `docs/how_it_operates.md`
+- `docs/why_bindu_guardian.md`
+- `docs/institutional_relevance.md`
+
+
+## Design and Trust
+
+- `docs/design_principles.md`
+- `docs/trust_model.md`
+- `docs/limitations.md`
