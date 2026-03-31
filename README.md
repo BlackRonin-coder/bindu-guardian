@@ -50,3 +50,9 @@ Bindu Guardian is intended as a defensive intelligence model for high-risk insti
 ## Note
 
 This repository is for public presentation and architectural explanation only.
+
+## Project Context
+
+Bindu Guardian sits within the wider strategic and systems-design context associated with Coal Tiger LTD.
+
+See `docs/company.md` for company links and contact context.
