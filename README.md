@@ -19,6 +19,14 @@ This architecture is aimed at continuity-critical environments such as:
 - public agencies
 - other high-risk institutional systems
 
+
+
+## Why this matters
+
+In high-risk systems, delayed recognition, opaque reasoning, and blunt response can all create avoidable harm.
+
+Bindu Guardian is designed to support earlier recognition, more proportionate action, continuity-aware defensive response, and clearer human trust in the decision process.
+
 ## Public Repository Scope
 
 This repository is a protected public release.
