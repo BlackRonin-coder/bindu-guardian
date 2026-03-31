@@ -1,3 +1,10 @@
+
+## One Page Overview
+
+For a quick understanding of Bindu Guardian:
+
+- `docs/one_page_pitch.md`
+
 # Bindu Guardian
 
 Bindu Guardian is a governed defensive decision architecture for high-risk systems.
