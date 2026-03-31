@@ -1,0 +1,24 @@
+{
+  "policy_name": "bindu_guardian_core_policy",
+  "principles": [
+    "people_first",
+    "proportional_response",
+    "selective_containment",
+    "human_override",
+    "immutable_auditability",
+    "safe_degradation"
+  ],
+  "action_ladder": [
+    "observe",
+    "reinforce",
+    "stabilize",
+    "isolate",
+    "restore",
+    "escalate"
+  ],
+  "hard_constraints": [
+    "no_uncontrolled_autonomy",
+    "no_blunt_shutdown_of_life_critical_services",
+    "require_trusted_authorization_for_critical_actions"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "domain": "university",
+  "priority_order": [
+    "student_safety",
+    "teaching_continuity",
+    "identity_integrity",
+    "research_protection"
+  ],
+  "preserve": [
+    "identity_access",
+    "core_teaching",
+    "staff_communications"
+  ],
+  "restrict": [
+    "bulk_account_changes",
+    "research_exports",
+    "unknown_integrations"
+  ],
+  "fallback": [
+    "manual_attendance",
+    "local_teaching_pack",
+    "phone_tree"
+  ]
+}

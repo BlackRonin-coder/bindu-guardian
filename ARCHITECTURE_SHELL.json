@@ -1,0 +1,44 @@
+{
+  "project_name": "Protective Guardian Architecture v1",
+  "mission": "Protect people, staff, and computer systems through proportional detection, interpretation, and response.",
+  "north_star": "Guardian coordination layer, not rogue autonomy.",
+  "domains": [
+    "hospital",
+    "university",
+    "agency"
+  ],
+  "core_layers": {
+    "sense": [
+      "system anomalies",
+      "staff reports",
+      "service disruption",
+      "access anomalies"
+    ],
+    "interpret": [
+      "wobble vs threat",
+      "local vs spreading",
+      "noise vs coordinated attack",
+      "pressure scoring"
+    ],
+    "respond": [
+      "observe",
+      "reinforce",
+      "stabilize",
+      "isolate",
+      "restore",
+      "escalate"
+    ],
+    "safeguard": [
+      "human override",
+      "manual fallback",
+      "audit trail",
+      "least harmful action"
+    ]
+  },
+  "design_constraints": [
+    "people first",
+    "proportional response",
+    "no uncontrolled autonomy",
+    "full auditability"
+  ]
+}

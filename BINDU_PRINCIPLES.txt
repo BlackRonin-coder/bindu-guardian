@@ -1,0 +1,8 @@
+1. Protect people first, then processes, then devices.
+2. Detect deviation, do not panic at noise.
+3. Interpret proportionately, not rigidly.
+4. Use layered response: observe, reinforce, stabilize, isolate, restore, escalate.
+5. Preserve human override and manual fallback.
+6. Log decisions and actions for auditability.
+7. Reject uncontrolled autonomy.
+8. Build for hospitals, universities, and agencies as real environments.

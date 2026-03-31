@@ -1,0 +1,17 @@
+{
+  "hospital": {
+    "preserve": ["critical_care", "medication_safety", "staff_communications"],
+    "restrict": ["nonessential_admin_changes", "unknown_devices", "high_risk_integrations"],
+    "fallback": ["paper_charting", "manual_medication_check", "voice_call_tree"]
+  },
+  "university": {
+    "preserve": ["identity_access", "core_teaching", "staff_communications"],
+    "restrict": ["research_exports", "bulk_account_changes", "unknown_integrations"],
+    "fallback": ["manual_attendance", "local_teaching_pack", "phone_tree"]
+  },
+  "agency": {
+    "preserve": ["essential_public_services", "identity_access", "staff_communications"],
+    "restrict": ["record_edits", "bulk_privilege_changes", "unknown_integrations"],
+    "fallback": ["manual_case_logging", "voice_call_tree", "offline_reference_pack"]
+  }
+}

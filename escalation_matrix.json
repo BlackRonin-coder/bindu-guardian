@@ -1,0 +1,26 @@
+{
+  "hospital": {
+    "observe": ["local_monitoring"],
+    "reinforce": ["it_duty", "ward_lead"],
+    "stabilize": ["it_duty", "ward_lead", "operations_manager"],
+    "isolate": ["it_incident_lead", "clinical_safety_lead", "operations_manager"],
+    "restore": ["it_incident_lead", "clinical_safety_lead", "operations_manager", "executive_on_call"],
+    "escalate": ["it_incident_lead", "clinical_safety_lead", "operations_manager", "executive_on_call", "external_response"]
+  },
+  "university": {
+    "observe": ["local_monitoring"],
+    "reinforce": ["it_duty", "faculty_ops"],
+    "stabilize": ["it_duty", "faculty_ops", "identity_admin"],
+    "isolate": ["it_incident_lead", "faculty_ops", "research_security"],
+    "restore": ["it_incident_lead", "faculty_ops", "research_security", "executive_on_call"],
+    "escalate": ["it_incident_lead", "faculty_ops", "research_security", "executive_on_call", "external_response"]
+  },
+  "agency": {
+    "observe": ["local_monitoring"],
+    "reinforce": ["it_duty", "service_manager"],
+    "stabilize": ["it_duty", "service_manager", "identity_admin"],
+    "isolate": ["it_incident_lead", "service_manager", "security_manager"],
+    "restore": ["it_incident_lead", "service_manager", "security_manager", "executive_on_call"],
+    "escalate": ["it_incident_lead", "service_manager", "security_manager", "executive_on_call", "external_response"]
+  }
+}

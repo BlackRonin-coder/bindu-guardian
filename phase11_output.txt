@@ -1,0 +1,125 @@
+
+=== HOSPITAL BINDU PHASE 11 ===
+{
+  "signals": [
+    "privilege_escalation_attempt",
+    "unexpected_shutdown",
+    "data_integrity_risk"
+  ],
+  "tiered_confidence": {
+    "weighted_signal_score": 5.5,
+    "escalate": true
+  },
+  "final_action": "escalate",
+  "system_actions": [
+    "isolate infected segments",
+    "lock admin privileges",
+    "maintain patient systems",
+    "allow clinical access only"
+  ],
+  "human_safe_actions": [
+    "isolate infected segments",
+    "lock admin privileges",
+    "maintain patient systems",
+    "allow clinical access only",
+    "guarantee patient care systems active",
+    "protect medication workflows"
+  ],
+  "guidance": "Monitor and proceed safely.",
+  "log_entry": {
+    "timestamp": "2026-03-31T15:24:10.512213",
+    "event_type": "guardian_decision",
+    "payload": {
+      "domain": "hospital",
+      "signals": [
+        "privilege_escalation_attempt",
+        "unexpected_shutdown",
+        "data_integrity_risk"
+      ],
+      "tiered_gate": {
+        "weighted_signal_score": 5.5,
+        "escalate": true
+      }
+    }
+  }
+}
+
+=== UNIVERSITY BINDU PHASE 11 ===
+{
+  "signals": [
+    "slow_system_response"
+  ],
+  "tiered_confidence": {
+    "weighted_signal_score": 0.5,
+    "escalate": false
+  },
+  "final_action": "observe",
+  "system_actions": [
+    "log activity"
+  ],
+  "human_safe_actions": [
+    "log activity",
+    "maintain student access",
+    "protect teaching continuity"
+  ],
+  "guidance": "Monitor and proceed safely.",
+  "log_entry": {
+    "timestamp": "2026-03-31T15:24:10.512419",
+    "event_type": "guardian_decision",
+    "payload": {
+      "domain": "university",
+      "signals": [
+        "slow_system_response"
+      ],
+      "tiered_gate": {
+        "weighted_signal_score": 0.5,
+        "escalate": false
+      }
+    }
+  }
+}
+
+=== AGENCY BINDU PHASE 11 ===
+{
+  "signals": [
+    "unexpected_shutdown",
+    "system_instability",
+    "spread_detected",
+    "privilege_escalation_attempt"
+  ],
+  "tiered_confidence": {
+    "weighted_signal_score": 7.0,
+    "escalate": true
+  },
+  "final_action": "escalate",
+  "system_actions": [
+    "isolate sensitive databases",
+    "lock privilege escalation",
+    "maintain public services"
+  ],
+  "human_safe_actions": [
+    "isolate sensitive databases",
+    "lock privilege escalation",
+    "maintain public services",
+    "preserve public access",
+    "maintain emergency services"
+  ],
+  "guidance": "Monitor and proceed safely.",
+  "log_entry": {
+    "timestamp": "2026-03-31T15:24:10.512498",
+    "event_type": "guardian_decision",
+    "payload": {
+      "domain": "agency",
+      "signals": [
+        "unexpected_shutdown",
+        "system_instability",
+        "spread_detected",
+        "privilege_escalation_attempt"
+      ],
+      "tiered_gate": {
+        "weighted_signal_score": 7.0,
+        "escalate": true
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+
+=== HOSPITAL BINDU PHASE 7 ===
+{
+  "signals": [
+    "data_integrity_risk",
+    "slow_system_response"
+  ],
+  "score": 0.4,
+  "trend": {
+    "trend": "insufficient_data",
+    "delta": 0.0,
+    "worsening": false
+  },
+  "correlation": {
+    "coordinated_attack_likely": false,
+    "reasons": [],
+    "correlation_confidence": 0.3
+  },
+  "escalation": {
+    "level": "moderate",
+    "preempt": false
+  },
+  "final_action": "stabilize",
+  "system_actions": [
+    "limit system changes",
+    "alert IT staff"
+  ],
+  "human_safe_actions": [
+    "limit system changes",
+    "alert IT staff",
+    "guarantee patient care systems active",
+    "protect medication workflows"
+  ],
+  "guidance": "Limit system usage. Continue essential medical services."
+}
+
+=== UNIVERSITY BINDU PHASE 7 ===
+{
+  "signals": [
+    "system_instability"
+  ],
+  "score": 0.2,
+  "trend": {
+    "trend": "insufficient_data",
+    "delta": 0.0,
+    "worsening": false
+  },
+  "correlation": {
+    "coordinated_attack_likely": false,
+    "reasons": [],
+    "correlation_confidence": 0.3
+  },
+  "escalation": {
+    "level": "low",
+    "preempt": false
+  },
+  "final_action": "reinforce",
+  "system_actions": [
+    "increase monitoring",
+    "verify access logs"
+  ],
+  "human_safe_actions": [
+    "increase monitoring",
+    "verify access logs",
+    "maintain student access",
+    "protect teaching continuity"
+  ],
+  "guidance": "Monitor and proceed safely."
+}
+
+=== AGENCY BINDU PHASE 7 ===
+{
+  "signals": [
+    "system_instability"
+  ],
+  "score": 0.2,
+  "trend": {
+    "trend": "insufficient_data",
+    "delta": 0.0,
+    "worsening": false
+  },
+  "correlation": {
+    "coordinated_attack_likely": false,
+    "reasons": [],
+    "correlation_confidence": 0.3
+  },
+  "escalation": {
+    "level": "low",
+    "preempt": false
+  },
+  "final_action": "reinforce",
+  "system_actions": [
+    "increase monitoring",
+    "verify access logs"
+  ],
+  "human_safe_actions": [
+    "increase monitoring",
+    "verify access logs",
+    "preserve public access",
+    "maintain emergency services"
+  ],
+  "guidance": "Monitor and proceed safely."
+}

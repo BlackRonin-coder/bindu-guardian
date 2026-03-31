@@ -1,0 +1,23 @@
+{
+  "domain": "hospital",
+  "critical_assets": [
+    "patient records",
+    "medication systems",
+    "staff communications",
+    "networked devices",
+    "scheduling systems"
+  ],
+  "human_priorities": [
+    "patient safety",
+    "continuity of care",
+    "clear staff instructions",
+    "manual fallback readiness"
+  ],
+  "example_signals": [
+    "record access anomalies",
+    "device communication failures",
+    "unexpected privilege use",
+    "staff confusion spike"
+  ],
+  "response_bias": "protect life first, then preserve operations"
+}

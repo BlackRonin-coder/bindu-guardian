@@ -1,0 +1,23 @@
+{
+  "domain": "agency",
+  "critical_assets": [
+    "identity and access control",
+    "case systems",
+    "communications",
+    "sensitive records",
+    "operational dashboards"
+  ],
+  "human_priorities": [
+    "public safety",
+    "staff safety",
+    "service continuity",
+    "information integrity"
+  ],
+  "example_signals": [
+    "privilege escalation attempts",
+    "record tampering indicators",
+    "communications disruption",
+    "coordinated endpoint anomalies"
+  ],
+  "response_bias": "contain fast, preserve evidence, maintain essential public function"
+}

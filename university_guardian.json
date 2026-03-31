@@ -1,0 +1,10 @@
+{
+  "domain": "university",
+  "signals": [
+    "access_anomaly",
+    "identity_system_pressure",
+    "research_data_risk",
+    "spread_detected"
+  ],
+  "human_message_bias": "student and staff continuity first"
+}

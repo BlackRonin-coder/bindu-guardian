@@ -1,0 +1,62 @@
+import json
+from signal_simulator import generate_signals
+from weighted_evaluator import evaluate_weighted
+from action_executor import execute_action
+from human_priority import prioritize_humans
+
+from bindu_guardian.core.policy_loader import load_policy
+from bindu_guardian.core.policy_engine import enforce_policy
+from bindu_guardian.core.trust_engine import evaluate_actor
+from bindu_guardian.core.self_protection import evaluate_self_protection
+from bindu_guardian.core.early_warning import early_warning
+from bindu_guardian.core.correlation_engine import correlate
+
+DOMAIN = "hospital"
+ACTOR_ROLE = "unknown_actor"
+
+signals = generate_signals()
+score = evaluate_weighted(signals)
+warning = early_warning(score, len(signals))
+correlation = correlate(signals)
+
+action = "observe"
+if score > 0.4:
+    action = "stabilize"
+if score > 0.7:
+    action = "isolate"
+if score > 0.9:
+    action = "escalate"
+
+if correlation["coordinated"] and correlation["confidence"] >= 0.8 and action in ["observe", "stabilize"]:
+    action = "isolate"
+
+trust = evaluate_actor(DOMAIN, ACTOR_ROLE)
+
+if not trust["trusted"] and action in ["restore", "escalate"]:
+    action = "stabilize"
+
+self_protection = evaluate_self_protection(trust, score, signals)
+
+system_actions = execute_action(DOMAIN, action)
+
+policy = load_policy()
+check = enforce_policy(action, DOMAIN, system_actions, policy)
+
+if not check["approved"]:
+    action = check["override_action"]
+    system_actions = execute_action(DOMAIN, action)
+
+human_safe_actions = prioritize_humans(DOMAIN, system_actions)
+
+print("\n=== BINDU GUARDIAN RUNTIME V5 ===")
+print(json.dumps({
+    "signals": signals,
+    "score": score,
+    "early_warning": warning,
+    "correlation": correlation,
+    "trust": trust,
+    "self_protection": self_protection,
+    "final_action": action,
+    "system_actions": system_actions,
+    "human_safe_actions": human_safe_actions
+}, indent=2))

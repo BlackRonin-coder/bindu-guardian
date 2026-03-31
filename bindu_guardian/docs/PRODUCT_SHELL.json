@@ -1,0 +1,27 @@
+{
+  "product_name": "Bindu Guardian",
+  "version": "0.1",
+  "purpose": "Protect institutions through principled defensive intelligence",
+  "core_modules": [
+    "signal intake",
+    "weighted evaluation",
+    "correlation engine",
+    "safety guardrails",
+    "identity guard",
+    "tamper detection",
+    "self protection",
+    "action executor",
+    "audit logging"
+  ],
+  "target_domains": [
+    "hospital",
+    "university",
+    "agency"
+  ],
+  "north_star": {
+    "protect_people": true,
+    "protect_systems": true,
+    "preserve_continuity": true,
+    "reject_rogue_autonomy": true
+  }
+}

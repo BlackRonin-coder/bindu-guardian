@@ -1,0 +1,216 @@
+
+=== HOSPITAL BINDU PHASE 10 ===
+{
+  "signals": [
+    "unexpected_shutdown",
+    "data_integrity_risk",
+    "slow_system_response",
+    "system_instability"
+  ],
+  "score": 0.9,
+  "correlation": {
+    "coordinated_attack_likely": false,
+    "reasons": [],
+    "correlation_confidence": 0.3
+  },
+  "authorization": {
+    "actor_role": "clinical_safety_lead",
+    "action": "restore",
+    "authorized": true,
+    "reason": "trusted role"
+  },
+  "tamper_detection": {
+    "tamper_suspected": false,
+    "reasons": []
+  },
+  "confidence_gate": {
+    "signal_count": 1,
+    "escalate": false
+  },
+  "self_protection": {
+    "self_protection_triggered": false,
+    "guardian_mode": "normal",
+    "actions": [
+      "continue guarded operation"
+    ]
+  },
+  "final_action": "stabilize",
+  "system_actions": [
+    "limit system changes",
+    "alert IT staff"
+  ],
+  "human_safe_actions": [
+    "limit system changes",
+    "alert IT staff",
+    "guarantee patient care systems active",
+    "protect medication workflows"
+  ],
+  "guidance": "Limit system usage. Continue essential medical services.",
+  "log_entry": {
+    "timestamp": "2026-03-31T15:16:28.460961",
+    "event_type": "guardian_decision",
+    "payload": {
+      "domain": "hospital",
+      "actor_role": "clinical_safety_lead",
+      "signals": [
+        "unexpected_shutdown",
+        "data_integrity_risk",
+        "slow_system_response",
+        "system_instability"
+      ],
+      "score": 0.9,
+      "final_action": "stabilize",
+      "confidence_gate": {
+        "signal_count": 1,
+        "escalate": false
+      }
+    }
+  }
+}
+
+=== UNIVERSITY BINDU PHASE 10 ===
+{
+  "signals": [
+    "privilege_escalation_attempt"
+  ],
+  "score": 0.4,
+  "correlation": {
+    "coordinated_attack_likely": false,
+    "reasons": [],
+    "correlation_confidence": 0.3
+  },
+  "authorization": {
+    "actor_role": "identity_admin",
+    "action": "stabilize",
+    "authorized": true,
+    "reason": "trusted role"
+  },
+  "tamper_detection": {
+    "tamper_suspected": true,
+    "reasons": [
+      "privilege escalation signal present"
+    ]
+  },
+  "confidence_gate": {
+    "signal_count": 1,
+    "escalate": false
+  },
+  "self_protection": {
+    "self_protection_triggered": true,
+    "guardian_mode": "hardened",
+    "actions": [
+      "freeze non-essential control changes",
+      "require dual authorization for critical actions",
+      "write immutable incident log"
+    ]
+  },
+  "final_action": "stabilize",
+  "system_actions": [
+    "limit system changes",
+    "alert IT staff"
+  ],
+  "human_safe_actions": [
+    "limit system changes",
+    "alert IT staff",
+    "maintain student access",
+    "protect teaching continuity"
+  ],
+  "guidance": "Restrict platform access. Maintain core teaching.",
+  "log_entry": {
+    "timestamp": "2026-03-31T15:16:28.461177",
+    "event_type": "guardian_decision",
+    "payload": {
+      "domain": "university",
+      "actor_role": "identity_admin",
+      "signals": [
+        "privilege_escalation_attempt"
+      ],
+      "score": 0.4,
+      "final_action": "stabilize",
+      "confidence_gate": {
+        "signal_count": 1,
+        "escalate": false
+      }
+    }
+  }
+}
+
+=== AGENCY BINDU PHASE 10 ===
+{
+  "signals": [
+    "data_integrity_risk",
+    "access_anomaly",
+    "slow_system_response",
+    "spread_detected",
+    "communications_disruption"
+  ],
+  "score": 1.0,
+  "correlation": {
+    "coordinated_attack_likely": true,
+    "reasons": [
+      "access anomaly combined with spread",
+      "integrity risk combined with communications disruption"
+    ],
+    "correlation_confidence": 0.8
+  },
+  "authorization": {
+    "actor_role": "unknown_actor",
+    "action": "escalate",
+    "authorized": false,
+    "reason": "untrusted role"
+  },
+  "tamper_detection": {
+    "tamper_suspected": true,
+    "reasons": [
+      "unknown actor attempted action"
+    ]
+  },
+  "confidence_gate": {
+    "signal_count": 4,
+    "escalate": true
+  },
+  "self_protection": {
+    "self_protection_triggered": true,
+    "guardian_mode": "hardened",
+    "actions": [
+      "freeze non-essential control changes",
+      "require dual authorization for critical actions",
+      "write immutable incident log"
+    ]
+  },
+  "final_action": "escalate",
+  "system_actions": [
+    "isolate sensitive databases",
+    "lock privilege escalation",
+    "maintain public services"
+  ],
+  "human_safe_actions": [
+    "isolate sensitive databases",
+    "lock privilege escalation",
+    "maintain public services",
+    "preserve public access",
+    "maintain emergency services"
+  ],
+  "guidance": "Monitor and proceed safely.",
+  "log_entry": {
+    "timestamp": "2026-03-31T15:16:28.461297",
+    "event_type": "guardian_decision",
+    "payload": {
+      "domain": "agency",
+      "actor_role": "unknown_actor",
+      "signals": [
+        "data_integrity_risk",
+        "access_anomaly",
+        "slow_system_response",
+        "spread_detected",
+        "communications_disruption"
+      ],
+      "score": 1.0,
+      "final_action": "escalate",
+      "confidence_gate": {
+        "signal_count": 4,
+        "escalate": true
+      }
+    }
+  }
+}

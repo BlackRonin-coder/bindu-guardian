@@ -1,0 +1,112 @@
+
+=== HOSPITAL BINDU PHASE 7 ===
+{
+  "signals": [
+    "privilege_escalation_attempt",
+    "spread_detected"
+  ],
+  "score": 0.7,
+  "trend": {
+    "trend": "insufficient_data",
+    "delta": 0.0,
+    "worsening": false
+  },
+  "correlation": {
+    "coordinated_attack_likely": false,
+    "reasons": [],
+    "correlation_confidence": 0.3
+  },
+  "escalation": {
+    "level": "high",
+    "preempt": true
+  },
+  "final_action": "stabilize",
+  "system_actions": [
+    "limit system changes",
+    "alert IT staff"
+  ],
+  "human_safe_actions": [
+    "limit system changes",
+    "alert IT staff",
+    "ensure patient care continuity"
+  ],
+  "guidance": "Limit system usage. Continue essential medical services."
+}
+
+=== UNIVERSITY BINDU PHASE 7 ===
+{
+  "signals": [
+    "communications_disruption",
+    "access_anomaly",
+    "system_instability",
+    "unexpected_shutdown",
+    "data_integrity_risk"
+  ],
+  "score": 1.0,
+  "trend": {
+    "trend": "insufficient_data",
+    "delta": 0.0,
+    "worsening": false
+  },
+  "correlation": {
+    "coordinated_attack_likely": true,
+    "reasons": [
+      "integrity risk combined with communications disruption"
+    ],
+    "correlation_confidence": 0.8
+  },
+  "escalation": {
+    "level": "critical",
+    "preempt": true
+  },
+  "final_action": "escalate",
+  "system_actions": [
+    "full lockdown",
+    "external incident response"
+  ],
+  "human_safe_actions": [
+    "full lockdown",
+    "external incident response",
+    "maintain teaching continuity"
+  ],
+  "guidance": "Monitor and proceed safely."
+}
+
+=== AGENCY BINDU PHASE 7 ===
+{
+  "signals": [
+    "unexpected_shutdown",
+    "spread_detected",
+    "communications_disruption",
+    "data_integrity_risk",
+    "slow_system_response"
+  ],
+  "score": 1.0,
+  "trend": {
+    "trend": "insufficient_data",
+    "delta": 0.0,
+    "worsening": false
+  },
+  "correlation": {
+    "coordinated_attack_likely": true,
+    "reasons": [
+      "integrity risk combined with communications disruption"
+    ],
+    "correlation_confidence": 0.8
+  },
+  "escalation": {
+    "level": "critical",
+    "preempt": true
+  },
+  "final_action": "escalate",
+  "system_actions": [
+    "full lockdown",
+    "external incident response"
+  ],
+  "human_safe_actions": [
+    "full lockdown",
+    "external incident response",
+    "preserve public service access"
+  ],
+  "guidance": "Monitor and proceed safely."
+}

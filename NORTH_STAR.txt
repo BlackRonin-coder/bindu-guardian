@@ -1,0 +1,5 @@
+Build toward a real protective system layer for places like hospitals, universities, and agencies that helps keep people, staff, and computer systems safe by detecting deviation, interpreting it proportionately, and coordinating protective response—without drifting into uncontrolled or nefarious autonomy.
+
+Current state: this is not a cybersecurity system yet. It is a decision core / interpretation layer that must be developed into a real-world protective architecture.
+
+Standing rule: all future creative projects must Bindu.

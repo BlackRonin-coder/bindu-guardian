@@ -1,0 +1,10 @@
+{
+  "domain": "agency",
+  "signals": [
+    "access_anomaly",
+    "communications_disruption",
+    "record_tampering_risk",
+    "spread_detected"
+  ],
+  "human_message_bias": "public function and staff safety first"
+}

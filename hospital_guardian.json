@@ -1,0 +1,10 @@
+{
+  "domain": "hospital",
+  "signals": [
+    "access_anomaly",
+    "system_instability",
+    "data_integrity_risk",
+    "spread_detected"
+  ],
+  "human_message_bias": "patient safety first"
+}

@@ -1,0 +1,23 @@
+{
+  "domain": "university",
+  "critical_assets": [
+    "student records",
+    "identity systems",
+    "research data",
+    "campus communications",
+    "learning platforms"
+  ],
+  "human_priorities": [
+    "student safety",
+    "staff coordination",
+    "continuity of teaching",
+    "protection of sensitive research"
+  ],
+  "example_signals": [
+    "login abuse",
+    "mass phishing indicators",
+    "research storage anomalies",
+    "platform outage spread"
+  ],
+  "response_bias": "protect people and identity systems while maintaining continuity where safe"
+}

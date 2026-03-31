@@ -1,0 +1,30 @@
+LEVEL 0 — OBSERVE
+- small wobble
+- no immediate disruption
+- continue monitoring
+
+LEVEL 1 — REINFORCE
+- mild deviation
+- remind staff of safe procedures
+- increase visibility
+
+LEVEL 2 — STABILIZE
+- moderate disruption
+- restrict risky actions
+- preserve essential services
+- prepare fallback
+
+LEVEL 3 — ISOLATE
+- serious threat
+- segment affected systems
+- contain spread
+- lock high-risk pathways
+
+LEVEL 4 — RESTORE
+- confirmed damaging event
+- recover from trusted state
+- verify integrity before re-entry
+
+LEVEL 5 — ESCALATE
+- human leadership, security, and emergency response engaged
+- external coordination if required

@@ -1,0 +1,24 @@
+{
+  "domain": "agency",
+  "priority_order": [
+    "public_safety",
+    "service_continuity",
+    "information_integrity",
+    "staff_safety"
+  ],
+  "preserve": [
+    "essential_public_services",
+    "identity_access",
+    "staff_communications"
+  ],
+  "restrict": [
+    "bulk_privilege_changes",
+    "record_edits",
+    "unknown_integrations"
+  ],
+  "fallback": [
+    "manual_case_logging",
+    "offline_reference_pack",
+    "voice_call_tree"
+  ]
+}

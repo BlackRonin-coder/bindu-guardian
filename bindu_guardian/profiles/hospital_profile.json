@@ -1,0 +1,25 @@
+{
+  "domain": "hospital",
+  "priority_order": [
+    "patient_safety",
+    "continuity_of_care",
+    "staff_coordination",
+    "system_integrity"
+  ],
+  "preserve": [
+    "critical_care",
+    "medication_workflows",
+    "clinical_access",
+    "staff_communications"
+  ],
+  "restrict": [
+    "bulk_admin_changes",
+    "unknown_devices",
+    "nonessential_integrations"
+  ],
+  "fallback": [
+    "paper_charting",
+    "manual_medication_check",
+    "voice_call_tree"
+  ]
+}
