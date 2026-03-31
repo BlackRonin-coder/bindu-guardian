@@ -2,6 +2,8 @@
 
 Bindu Guardian is a governed decision architecture for high-risk systems.
 
+## What it does
+
 It is designed to:
 - detect system instability
 - resist manipulation
@@ -21,8 +23,3 @@ Bindu Guardian:
 - explains why
 
 ## Example Output
-git init
-git branch -M main
-ls
-git init
-git branch -M main
