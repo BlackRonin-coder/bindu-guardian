@@ -1,27 +1,57 @@
 # Bindu Guardian Example Outputs
 
-## Example 1: Low-risk instability
+## Example 1 — Low-risk instability
 
-- Situation: transient incident
-- Response: stabilize
-- Rationale: limited disruption without sustained high-risk pressure
+Situation:
+transient incident
 
-## Example 2: Coordinated threat indicators
+Reason:
+limited disruption without sustained high-risk pressure
 
-- Situation: coordinated attack
-- Response: isolate
-- Rationale: high-risk pressure exceeded threshold
+Recommended action:
+stabilize
 
-## Example 3: Slow-burn attack
+Why:
+local instability should be managed without unnecessary disruption.
 
-- Situation: slow burn attack
-- Response: isolate
-- Rationale: high-risk pressure increased over time, suggesting escalation risk
+---
+
+## Example 2 — Coordinated threat indicators
+
+Situation:
+coordinated attack
+
+Reason:
+multiple high-risk signals exceeded the decision threshold
+
+Recommended action:
+isolate
+
+Why:
+containment is justified where coordinated threat indicators are strong.
+
+---
+
+## Example 3 — Slow-burn attack
+
+Situation:
+slow burn attack
+
+Reason:
+high-risk pressure increased over time
+
+Recommended action:
+isolate
+
+Why:
+preempt escalation and contain before spread increases.
+
+---
 
 ## Example explainability output
 
 Guardian classified this as a slow burn attack because high-risk pressure was increasing over time. Recommended action: isolate.
 
-## Public Note
+## Public note
 
-These are demonstration examples. They illustrate behaviour and philosophy, not the protected internal logic.
+Examples in this document are illustrative public outputs. They demonstrate behaviour and design intent without exposing protected internal logic.

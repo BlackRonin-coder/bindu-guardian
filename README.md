@@ -1,58 +1,73 @@
 # Bindu Guardian
 
-Bindu Guardian is a governed decision architecture for high-risk systems.
+Bindu Guardian is a governed defensive decision architecture for high-risk systems.
 
 It is designed for environments where human safety, service continuity, and system integrity must all be protected at the same time.
 
-## What it does
+## Core Idea
 
-Bindu Guardian is designed to:
-- detect system instability
-- resist manipulation
-- coordinate multi-agent inputs
-- classify real-world scenarios
-- provide explainable decisions
+Most systems either react too late or respond too bluntly.
 
-## Why it is different
+Bindu Guardian is designed to help institutions detect meaningful instability, distinguish noise from coordinated threat, respond proportionally, and explain why a given action was chosen.
 
-Most systems react to isolated signals.
+## Intended Use Context
 
-Bindu Guardian is designed to:
-- understand context
-- track change over time
-- distinguish noise from coordinated threat
-- respond proportionally
-- explain why a decision was made
+This architecture is aimed at continuity-critical environments such as:
 
-## Public Repository Scope
-
-This repository contains a **public architecture layer** and a **demonstration shell**.
-
-It does **not** expose:
-- protected internal decision logic
-- tuning thresholds
-- optimisation methods
-- proprietary response heuristics
-
-## Documents
-
-- `docs/architecture.md` — public high-level architecture
-- `docs/examples.md` — example outputs and behaviour illustrations
-
-## Positioning
-
-Bindu Guardian is intended as a defensive intelligence model for high-risk institutional settings such as:
 - hospitals
 - universities
 - public agencies
-- other continuity-critical systems
+- other high-risk institutional systems
 
-## Note
+## Public Repository Scope
 
-This repository is for public presentation and architectural explanation only.
+This repository is a protected public release.
+
+It shows the architectural model, operating logic at a high level, and example behavioural patterns.
+
+It does not expose:
+
+- protected internal decision logic
+- scoring thresholds
+- tuning methods
+- proprietary optimisation heuristics
+- sensitive implementation details
+
+## Public Architecture Layers
+
+- Signal Detection
+- Correlation
+- Trust Evaluation
+- Deception Resistance
+- Consensus
+- Temporal Analysis
+- Situation Classification
+- Explainability
+
+## Design Principles
+
+- people first
+- continuity where safely possible
+- proportional response
+- selective containment over blunt shutdown
+- governed operation, not uncontrolled autonomy
+- explainability and auditability
 
 ## Project Context
 
-Bindu Guardian sits within the wider strategic and systems-design context associated with Coal Tiger LTD.
+Bindu Guardian sits within a wider systems-design and governance context associated with Coal Tiger LTD.
 
-See `docs/company.md` for company links and contact context.
+See `docs/company.md` for company context and contact details.
+
+## Documents
+
+- `docs/architecture.md`
+- `docs/examples.md`
+- `docs/positioning.md`
+- `docs/company.md`
+
+## Public Note
+
+This repository is for architectural presentation, evaluation, and communication.
+
+It is not a full public release of the underlying protected implementation.

@@ -2,44 +2,56 @@
 
 ## Purpose
 
-Bindu Guardian is a governed decision architecture for high-risk systems. It is designed to support safe, explainable, proportional responses in environments where human safety, service continuity, and system integrity all matter.
+Bindu Guardian is a governed defensive decision architecture designed for high-risk systems where safety, continuity, and integrity must be protected together.
 
-## Public Architecture Layers
+## High-Level Flow
 
-1. Signal Detection  
-   Detects anomalies, instability, and potentially meaningful events.
+1. Detect potentially meaningful signals
+2. Correlate signals across domains or agents
+3. Evaluate trust and reduce unsafe influence
+4. Resist deception and manipulation
+5. Build consensus across specialist agents
+6. Track risk over time
+7. Classify the situation
+8. Produce a proportionate recommended response
+9. Explain the decision in plain English
 
-2. Correlation Engine  
-   Checks whether multiple signals suggest a connected incident rather than isolated noise.
+## Public Layers
 
-3. Trust Evaluation  
-   Distinguishes trusted from untrusted actors before allowing critical control influence.
+### Signal Detection
+Captures anomalies, instability, and potentially meaningful events.
 
-4. Deception Resistance  
-   Reduces the chance of manipulation through fake or strategically crafted signals.
+### Correlation
+Assesses whether signals indicate isolated noise or connected threat.
 
-5. Consensus Engine  
-   Combines multiple specialist agent views into a coordinated decision.
+### Trust Evaluation
+Distinguishes trusted from untrusted actors before allowing critical influence.
 
-6. Temporal Analysis  
-   Tracks whether risk is rising, stable, or easing over time.
+### Deception Resistance
+Reduces the chance of system manipulation through crafted or conflicting signals.
 
-7. Situation Classification  
-   Labels conditions such as false alarm, transient incident, coordinated attack, or slow-burn attack.
+### Consensus
+Combines multiple specialised viewpoints into a coordinated decision.
 
-8. Explainability Layer  
-   Produces plain-English justifications and short executive briefings.
+### Temporal Analysis
+Tracks whether pressure is rising, stable, or easing over time.
 
-## Design Principles
+### Situation Classification
+Labels conditions such as false alarm, transient incident, coordinated attack, or slow-burn attack.
 
-- People first
-- Continuity where safely possible
-- Proportional response
-- Selective containment over blunt shutdown
-- Human override
-- Auditability
-- No uncontrolled autonomy
+### Explainability
+Produces decision traces and executive-readable summaries.
 
-## Public Note
+## Operating Principles
 
-This document describes the public architecture only. Internal scoring logic, thresholds, optimisation methods, and protected tuning are intentionally withheld.
+- people first
+- continuity where safely possible
+- proportional response
+- selective containment
+- human override
+- auditable reasoning
+- no uncontrolled autonomy
+
+## Public note
+
+This document describes the public architecture only. Protected internal implementation details are intentionally withheld.
