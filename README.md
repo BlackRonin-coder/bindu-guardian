@@ -71,3 +71,13 @@ See `docs/company.md` for company context and contact details.
 This repository is for architectural presentation, evaluation, and communication.
 
 It is not a full public release of the underlying protected implementation.
+
+
+## Governance and Release Boundary
+
+This repository is governed as a protected public release.
+
+Additional public-governance documents:
+- `SECURITY.md`
+- `CONTRIBUTING.md`
+- `docs/public_release_boundary.md`
